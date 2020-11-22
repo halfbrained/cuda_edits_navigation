@@ -1,0 +1,16 @@
+[info]
+title=Edits Navigation
+desc=Return to previously edited lines
+type=cudatext-plugin
+subdir=cuda_edits_navigation
+homepage=https://github.com/halfbrained/cuda_edits_navigation
+
+[item1]
+section=events
+events=on_change,on_caret
+
+[item2]
+section=commands
+caption=Go To Last Edit
+method=to_last_edit
+
