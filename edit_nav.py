@@ -106,7 +106,7 @@ class Command:
       if line in self.edited_lines[f]:
         self.edited_lines[f].remove(line)
       
-      if merge_adjacent_edits  and  abs(line - self.edited_lines[f][0]) == 1:
+      if merge_adjacent_edits  and  self.edited_lines[f]  and  abs(line - self.edited_lines[f][0]) == 1:
         self.edited_lines[f].popleft()
       
       self.edited_lines[f].appendleft(line) 
