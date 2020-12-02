@@ -11,6 +11,5 @@ events=on_change,on_caret
 
 [item2]
 section=commands
-caption=Go To Last Edit
+caption=Edits Navigation\Go To Previous Edit
 method=to_last_edit
-
