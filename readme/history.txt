@@ -1,0 +1,3 @@
+
+2021.09.21
+- fix: crash when working with CudaExt action "Align carets columns" (thanks Markus)
