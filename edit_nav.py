@@ -95,7 +95,9 @@ class Command:
           
           
     def save_edit_pos(self, ed_self):
-      line = ed_self.get_carets()[0][1] # y of first caret
+      carets = ed_self.get_carets()
+      if not carets: return  
+      line = carets[0][1] # y of first caret
       f = ed_self.get_filename() 
        
       if f not in self.edited_lines:
